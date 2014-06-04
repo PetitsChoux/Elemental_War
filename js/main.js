@@ -33,7 +33,7 @@ window.onload = function()
 
 	//balls
 	var canvas_bullets = document.getElementById("canvas_balls");
-	context_balls = canvas_balls.getContext("2d");
+	context_bullets = canvas_balls.getContext("2d");
 	context_bullets.width = 1920;
 	canvas_bullets.height = 1080;
 
@@ -57,7 +57,7 @@ window.onload = function()
 var context_background;
 var context_obstacles;
 var context_players;
-var context_balls;
+var context_bullets;
 var context_hud;
 
 var frame = 0;
@@ -70,14 +70,13 @@ var frame = 0;
 
 //-------------------------------------------> Classe d'objet <-------------------------------------------//
 
-
 function run()
 {
 	requestAnimFrame(run);
 	context_background.clearRect(0, 0, canvas_background.width, canvas_background.height);
 	context_obstacles.clearRect(0, 0, canvas_obstacles.width, canvas_obstacles.height);
 	context_players.clearRect(0, 0, canvas_players.width, canvas_players.height);
-	context_balls.clearRect(0, 0, canvas_balls.width, canvas_balls.height);
+	context_bullets.clearRect(0, 0, canvas_balls.width, canvas_balls.height);
 	context_hud.clearRect(0, 0, canvas_hud.width, canvas_hud.height);
 	frame++;
 }
