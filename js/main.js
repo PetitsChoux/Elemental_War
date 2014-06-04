@@ -16,8 +16,8 @@ window.onload = function()
 	//background
 	var canvas_background = document.getElementById("canvas_background");
 	context_background = canvas_background.getContext("2d");
-	canvas_background.width = 1920;
-	canvas_background.height = 1080;
+	canvas_background.width = window.innerWidth;
+	canvas_background.height = window.innerHeight;
 
 	//obstacles
 	var canvas_obstacles = document.getElementById("canvas_obstacles");
@@ -44,7 +44,7 @@ window.onload = function()
 	canvas_hud.height = 1080;
 
 	// ====> déclaration de lien source des images
-	// ex: background.src = "img/background.png";
+	backgroundImage.src = "img/background.png";
 
 	// ====> déclaration des objets
 	//ex: object = new Object();
@@ -63,7 +63,7 @@ var context_hud;
 var frame = 0;
 
 // ====> variables images
-//ex: var background = new Image();
+var backgroundImage = new Image();
 
 //-------------------------------------------> Fonctions Globales <-------------------------------------------//
 
@@ -79,4 +79,6 @@ function run()
 	context_bullets.clearRect(0, 0, canvas_balls.width, canvas_balls.height);
 	context_hud.clearRect(0, 0, canvas_hud.width, canvas_hud.height);
 	frame++;
+
+	background();
 }
