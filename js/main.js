@@ -15,31 +15,31 @@ window.onload = function()
 {
 	//background
 	var canvas_background = document.getElementById("canvas_background");
-	context_background = canvas.getContext("2d");
+	context_background = canvas_background.getContext("2d");
 	canvas_background.width = 1920;
 	canvas_background.height = 1080;
 
 	//obstacles
 	var canvas_obstacles = document.getElementById("canvas_obstacles");
-	context_obstacles = canvas.getContext("2d");
+	context_obstacles = canvas_obstacles.getContext("2d");
 	canvas_obstacles.width = 1920;
 	canvas_obstacles.height = 1080;
 
 	//players
 	var canvas_players = document.getElementById("canvas_players");
-	context_players = canvas.getContext("2d");
+	context_players = canvas_players.getContext("2d");
 	canvas_players.width = 1920;
 	canvas_players.height = 1080;
 
 	//balls
-	var canvas_balls = document.getElementById("canvas_balls");
-	context_balls = canvas.getContext("2d");
-	canvas_balls.width = 1920;
-	canvas_balls.height = 1080;
+	var canvas_bullets = document.getElementById("canvas_balls");
+	context_balls = canvas_balls.getContext("2d");
+	context_bullets.width = 1920;
+	canvas_bullets.height = 1080;
 
 	//hud
 	var canvas_hud = document.getElementById("canvas_hud");
-	context_hud = canvas.getContext("2d");
+	context_hud = canvas_hud.getContext("2d");
 	canvas_hud.width = 1920;
 	canvas_hud.height = 1080;
 
