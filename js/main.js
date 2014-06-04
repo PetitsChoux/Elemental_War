@@ -74,6 +74,10 @@ var frame = 0;
 function run()
 {
 	requestAnimFrame(run);
-	context.clearRect(0, 0, canvasWidth, canvasHeight);
+	context_background.clearRect(0, 0, canvas_background.width, canvas_background.height);
+	context_obstacles.clearRect(0, 0, canvas_obstacles.width, canvas_obstacles.height);
+	context_players.clearRect(0, 0, canvas_players.width, canvas_players.height);
+	context_balls.clearRect(0, 0, canvas_balls.width, canvas_balls.height);
+	context_hud.clearRect(0, 0, canvas_hud.width, canvas_hud.height);
 	frame++;
 }
