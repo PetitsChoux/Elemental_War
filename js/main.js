@@ -80,5 +80,7 @@ function run()
 	context_hud.clearRect(0, 0, canvas_hud.width, canvas_hud.height);
 	frame++;
 
+	// tests rendus
 	background();
+	//
 }
