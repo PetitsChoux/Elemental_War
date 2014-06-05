@@ -1,0 +1,17 @@
+body
+{
+    overflow: hidden;
+    margin: auto;
+}
+
+#canvas_background
+{
+    z-index: -5;
+}
+
+#charging_bar
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}

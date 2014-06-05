@@ -85,4 +85,5 @@ function run()
 	// tests rendus
 	background();
 	//
+	initGameLoop();
 }
