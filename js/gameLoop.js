@@ -1,23 +1,13 @@
-var initGameLoop = function()
-{
+function progress(percent, $element) {
+    var progressBarWidth = percent * $element.width() / 100;
+    $element.find('div').animate({ width: progressBarWidth }, 500).html(percent + "%&nbsp;");
+}
 
-	var maxprogress = 250;   // total à atteindre
-	var actualprogress = 0;  // valeur courante
-	var itv = 0;  // id pour setinterval
-	function prog()
-	{
-	  if(actualprogress >= maxprogress) 
-	  {
-	    clearInterval(itv);   	
-	    return;
-	  }	
-	  var progressnum = document.getElementById("progressnum");
-	  var indicator = document.getElementById("indicator");
-	  actualprogress += 1;	
-	  indicator.style.width=actualprogress + "px";
-	  progressnum.innerHTML = actualprogress;
-	  if(actualprogress == maxprogress) clearInterval(itv);   
-	}
+var initGameLoop = function()
+{	
+	progress(25,$('#progressBar'));
+	progress(50,$('#progressBar'));
+	progress(75,$('#progressBar'));
 }
 
 var gameLoop = function()

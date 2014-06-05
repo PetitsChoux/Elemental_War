@@ -72,6 +72,9 @@ var dryGroundImage = new Image();
 
 //-------------------------------------------> Classe d'objet <-------------------------------------------//
 
+//-------------------------------------------> Variables de Test<-------------------------------------------//
+var test = false;
+
 function run()
 {
 	requestAnimFrame(run);
@@ -83,7 +86,13 @@ function run()
 	frame++;
 
 	// tests rendus
-	background();
+	drawBackground();
 	//
-	initGameLoop();
+	if (!test)
+	{
+		test = true;
+		initGameLoop();
+	}
+
+	progress(100,$('#progressBar'));
 }
