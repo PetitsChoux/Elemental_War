@@ -45,6 +45,7 @@ window.onload = function()
 
 	// ====> déclaration de lien source des images
 	backgroundImage.src = "img/background.png";
+	dryGroundImage.src = "img/background_Dry_Ground.png"
 
 	// ====> déclaration des objets
 	//ex: object = new Object();
@@ -64,6 +65,7 @@ var frame = 0;
 
 // ====> variables images
 var backgroundImage = new Image();
+var dryGroundImage = new Image();
 
 //-------------------------------------------> Fonctions Globales <-------------------------------------------//
 
